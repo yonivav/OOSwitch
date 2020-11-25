@@ -13,6 +13,10 @@ public class OOSwitch: UIControl {
     // MARK: Public properties
 
     @IBInspectable public var isOn:Bool = true
+        didSet {
+            self.setupViewsOnAction()
+        }
+    }
 
     public var animationDuration: Double = 0.5
 
